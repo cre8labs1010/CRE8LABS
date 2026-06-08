@@ -47,32 +47,32 @@ const DEFAULT_SERVICES = [
 
 const DEFAULT_PROJECTS = [
   {
-    id: 'p1', icon: '🏦', title: 'FinVault Dashboard',
-    desc: 'A real-time financial analytics dashboard with dark mode, interactive charts, and AI-powered insights for portfolio management.',
-    domain: 'web', tags: ['React', 'TypeScript', 'D3.js', 'Node.js'],
-    link: 'https://finvault-demo.vercel.app',
-    thumbnail: 'https://picsum.photos/seed/finvault/600/400'
+    id: 'p1', icon: '🏦', title: 'Sales Dashboard',
+    desc: 'An admin dashboard to detail analysis of the sales on monthly basis and with per client information .',
+    domain: 'web', tags: ['React', 'TypeScript', 'Node.js'],
+    link: '',
+    thumbnail: 'https://www.boldbi.com/wp-content/uploads/2026/02/zendesk-sell-deals-performance-dashboard-v2.webp'
   },
   {
-    id: 'p2', icon: '🎥', title: 'Horizon Brand Film',
-    desc: 'A cinematic brand film for a tech startup featuring drone footage, dynamic transitions, and an original soundtrack.',
+    id: 'p2', icon: '🎥', title: 'Wedding Cinematic Film',
+    desc: 'A cinematic wedding film capturing the elegance, emotion, and timeless beauty of a couples special day. Shot during golden hour, this project focuses on natural storytelling, intimate moments, and luxurious visual aesthetics. Through cinematic framing, smooth camera movements, color grading, and emotional pacing, the film transforms real moments into a memorable love story.',
     domain: 'video', tags: ['Premiere Pro', 'After Effects', 'DaVinci Resolve'],
-    link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-    thumbnail: 'https://picsum.photos/seed/horizon/600/400'
+    link: 'https://vimeo.com/1199360416?share=copy&fl=sv&fe=ci',
+    thumbnail: 'https://cdn.corenexis.com/files/c/5118327720.png'
   },
   {
-    id: 'p3', icon: '🛒', title: 'LuxeCart E-Commerce',
-    desc: 'A premium e-commerce platform with 3D product previews, AI recommendations, and seamless checkout experience.',
-    domain: 'web', tags: ['Next.js', 'Stripe', 'Three.js', 'PostgreSQL'],
-    link: 'https://luxecart-demo.vercel.app',
-    thumbnail: 'https://picsum.photos/seed/luxecart/600/400'
+    id: 'p3', icon: '🛒', title: 'ClubHouseCafe',
+    desc: 'A premium Cafe showcasing site with Menu details , Event Booking , and Club store to buy goodies .',
+    domain: 'web', tags: ['HTML', 'CSS', 'JS', 'Payment Gateway'],
+    link: 'https://clubhousecafebx.com/',
+    thumbnail: 'https://websitevice.com/images/clubhouse-cafe-website-example.jpg'
   },
   {
-    id: 'p4', icon: '✨', title: 'Nova Launch Reel',
-    desc: 'A high-energy product launch video with kinetic typography, particle effects, and synchronized audio design.',
-    domain: 'video', tags: ['After Effects', 'Cinema 4D', 'Sound Design'],
-    link: 'https://vimeo.com/123456789',
-    thumbnail: 'https://picsum.photos/seed/launchreel/600/400'
+    id: 'p4', icon: '✨', title: 'Documentary Edit!',
+    desc: 'A Talking Head Documentary Edit for the Video Editing Cohort by Tharunspeaks.',
+    domain: 'video', tags: ['After Effects', 'Motion Graphics', 'Sound Design'],
+    link: 'https://youtu.be/h5vBCwwef9E?si=SaLWnoFwNLKgk2dh',
+    thumbnail: 'https://cdn.corenexis.com/files/c/6919934720.jpg'
   },
   {
     id: 'p5', icon: '🏥', title: 'MedConnect Platform',
