@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRE8LABS — Creative Agency | Web Development & Video Editing</title>
+  <meta name="description"
+    content="CRE8LABS is a premium creative agency specializing in web development and cinematic video editing. We craft digital experiences that convert." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ========== EDITORIAL METADATA LABELS ========== -->
+  <div class="meta-label meta-label-tl">CRE8LABS / 2026</div>
+  <div class="meta-label meta-label-tr">Creative Studio<br />Web + Video<br />v1.0</div>
+  <div class="meta-label meta-label-bl">0% — Human needs human...ironically.</div>
+
+  <!-- ========== SVG FLUID RIBBON ========== -->
+  <svg class="fluid-ribbon" viewBox="0 0 1440 900" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="ribbonBlur">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="35" />
+      </filter>
+    </defs>
+    <path class="ribbon-path" d="M-100,150 C200,50 350,400 600,350 S900,100 1100,300 S1400,600 1600,450" fill="none"
+      stroke="#2a3ef5" stroke-width="160" stroke-linecap="round" filter="url(#ribbonBlur)" />
+  </svg>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">◆</span>
+        <span class="logo-text"><span style="color:#1F1F1F">CRE</span><span style="color:#2D41F3">8</span><span
+            style="color:#1F1F1F">LABS</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-admin" id="adminToggle" aria-label="Toggle Admin Mode">
+          <span class="admin-icon">⚙</span>
+          <span class="admin-label">Admin</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge animate-in">
+        <span class="badge-dot"></span>
+        Available for new projects
+      </div>
+      <h1 class="hero-title animate-in">
+        We Build<br /><span class="text-accent">Digital</span>
+        Experiences<br />That <span class="text-purple">Convert</span>
+      </h1>
+      <div class="hero-ctas animate-in">
+        <a href="#work" class="btn btn-primary">
+          <span>View Our Work</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <span>Start a Project</span>
+        </a>
+      </div>
+      <div class="hero-stats animate-in">
+        <div class="stat">
+          <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="280">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Average ROI</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="99">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES SECTION ========== -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Do</span>
+        <h2 class="section-title">Services That <span class="text-accent">Elevate</span></h2>
+        <p class="section-desc">From pixel-perfect interfaces to scroll-stopping video content — we deliver the full
+          creative stack.</p>
+      </div>
+      <div class="services-grid" id="servicesGrid">
+        <!-- Services rendered by JS -->
+      </div>
+      <button class="btn btn-primary btn-add admin-only" id="addServiceBtn" style="display:none;">
+        <span>+ Add Service</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO SECTION ========== -->
+  <section class="section portfolio-section" id="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Work</span>
+        <h2 class="section-title">Featured <span class="text-purple">Projects</span></h2>
+        <p class="section-desc">A curated selection of our finest digital creations and cinematic productions.</p>
+      </div>
+      <div class="filter-tabs" id="filterTabs">
+        <!-- Rendered dynamically by JS -->
+      </div>
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Projects rendered by JS -->
+      </div>
+      <button class="btn btn-primary btn-add admin-only" id="addProjectBtn" style="display:none;">
+        <span>+ Add Project</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Create <span class="text-accent">Together</span></h2>
+        <p class="section-desc">Have a project in mind? We'd love to hear about it. Drop us a line and let's make
+          something incredible.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:cre8labs1010@gmail.com" class="info-card info-card-link"
+            style="text-decoration:none;color:inherit;">
+            <div class="info-icon">✉</div>
+            <div class="info-content">
+              <h4>Email Us</h4>
+              <p>cre8labs1010@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/cre8labs.studio" target="_blank" rel="noopener noreferrer"
+            class="info-card info-card-link" style="text-decoration:none;color:inherit;">
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <circle cx="12" cy="12" r="5"></circle>
+                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"></circle>
+              </svg>
+            </div>
+            <div class="info-content">
+              <h4>Instagram</h4>
+              <p>@cre8labs.studio</p>
+            </div>
+          </a>
+          <div class="info-card">
+            <div class="info-icon">⚡</div>
+            <div class="info-content">
+              <h4>Response Time</h4>
+              <p>Within 24 hours</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="contactName">Full Name</label>
+            <input type="text" id="contactName" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email Address</label>
+            <input type="email" id="contactEmail" placeholder="john@example.com" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactService">Service Interest</label>
+              <select id="contactService" required>
+                <option value="" disabled selected>Select a service</option>
+                <!-- Domain options populated by JS -->
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contactBudget">Budget Range</label>
+              <select id="contactBudget" required>
+                <option value="" disabled selected>Select budget</option>
+                <option value="5k">$1K – $5K</option>
+                <option value="10k">$5K – $10K</option>
+                <option value="25k">$10K – $25K</option>
+                <option value="50k">$25K – $50K</option>
+                <option value="50k+">$50K+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Project Details</label>
+            <textarea id="contactMessage" rows="5" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M14 2L7 9M14 2L10 14L7 9M14 2L2 6L7 9" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✓</div>
+            <h4>Message Sent Successfully!</h4>
+            <p>We'll get back to you within 24 hours.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="nav-logo footer-logo">
+        <span class="logo-icon">◆</span>
+        <span class="logo-text"><span style="color:#1F1F1F">CRE</span><span style="color:#2D41F3">8</span><span
+            style="color:#1F1F1F">LABS</span></span>
+      </a>
+      <p class="footer-copy">&copy; 2026 CRE8LABS. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ========== ADMIN EXIT BAR ========== -->
+  <div class="admin-bar" id="adminBar" style="display:none;">
+    <span>🔓 Admin Mode Active</span>
+    <button class="btn btn-sm btn-domains" id="manageDomainsBtn">🏷 Domains</button>
+    <button class="btn btn-sm" id="exitAdminBtn">Exit Admin Mode</button>
+  </div>
+
+  <!-- ========== MODAL OVERLAY ========== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h3 class="modal-title" id="modalTitle">Add Service</h3>
+      <form id="modalForm">
+        <div class="form-group">
+          <label for="modalIcon">Emoji Icon</label>
+          <input type="text" id="modalIcon" placeholder="🎨" maxlength="4" required />
+        </div>
+        <div class="form-group">
+          <label for="modalItemTitle">Title</label>
+          <input type="text" id="modalItemTitle" placeholder="Service title" required />
+        </div>
+        <div class="form-group">
+          <label for="modalDesc">Description</label>
+          <textarea id="modalDesc" rows="3" placeholder="Brief description..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="modalDomain">Domain</label>
+          <select id="modalDomain" required>
+            <!-- Domain options populated by JS -->
+          </select>
+        </div>
+        <div class="form-group" id="linkGroup" style="display:none;">
+          <label for="modalLink">Link URL</label>
+          <input type="url" id="modalLink" placeholder="https://example.com" />
+        </div>
+        <div class="form-group" id="thumbnailGroup" style="display:none;">
+          <label for="modalThumbnail">Thumbnail Image URL</label>
+          <input type="url" id="modalThumbnail" placeholder="https://example.com/image.jpg" />
+          <div class="thumb-preview" id="thumbPreview">
+            <img id="thumbPreviewImg" alt="Preview" />
+            <span class="thumb-preview-empty">Image preview</span>
+          </div>
+        </div>
+        <div class="form-group tags-group" id="tagsGroup" style="display:none;">
+          <label for="modalTags">Tags (comma-separated)</label>
+          <input type="text" id="modalTags" placeholder="React, Next.js, Design" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          <span id="modalSubmitText">Add Service</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========== PASSWORD PROMPT ========== -->
+  <div class="modal-overlay" id="passwordOverlay">
+    <div class="modal modal-sm">
+      <button class="modal-close" id="passwordClose">&times;</button>
+      <div class="password-header">
+        <span class="password-icon">🔐</span>
+        <h3 class="modal-title">Admin Access</h3>
+        <p class="modal-subtitle">Enter the admin password to continue</p>
+      </div>
+      <form id="passwordForm">
+        <div class="form-group">
+          <label for="adminPassword">Password</label>
+          <input type="password" id="adminPassword" placeholder="••••••••" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-full"><span>Unlock</span></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========== DOMAIN MANAGEMENT MODAL ========== -->
+  <div class="modal-overlay" id="domainOverlay">
+    <div class="modal">
+      <button class="modal-close" id="domainClose">&times;</button>
+      <h3 class="modal-title">Manage Domains</h3>
+      <p class="modal-subtitle" style="margin-bottom:24px;color:var(--text-muted);font-size:0.9rem;">Add, edit, or
+        remove the service domains that categorize your work.</p>
+      <div class="domain-list" id="domainList">
+        <!-- Rendered by JS -->
+      </div>
+      <form id="domainAddForm" class="domain-add-form">
+        <div class="domain-add-row">
+          <input type="color" id="domainColor" value="#2a3ef5" class="domain-color-picker" title="Pick a color" />
+          <input type="text" id="domainSlug" placeholder="slug (e.g. design)" required pattern="[a-z0-9\-]+"
+            title="Lowercase letters, numbers, and hyphens only" />
+          <input type="text" id="domainDisplayName" placeholder="Display Name" required />
+          <button type="submit" class="btn btn-sm">+ Add</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========== TOAST CONTAINER ========== -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
