@@ -75,18 +75,18 @@ const DEFAULT_PROJECTS = [
     thumbnail: 'https://cdn.corenexis.com/files/c/6919934720.jpg'
   },
   {
-    id: 'p5', icon: '🏥', title: 'MedConnect Platform',
-    desc: 'A HIPAA-compliant telehealth platform with real-time video calls, appointment scheduling, and secure patient records.',
-    domain: 'web', tags: ['Vue.js', 'WebRTC', 'AWS', 'HIPAA'],
-    link: 'https://medconnect-demo.vercel.app',
-    thumbnail: 'https://picsum.photos/seed/medconnect/600/400'
+    id: 'p5', icon: '🏥', title: 'The Bach Suites',
+    desc: 'A Premium Hotel Website to show their Interiors , Rooms and Hospitality',
+    domain: 'web', tags: ['Design', 'HTML', 'CSS', 'JS'],
+    link: 'https://www.thebachsuites.com/',
+    thumbnail: 'https://websitevice.com/images/bach-suites-saigon-website-example.jpg'
   },
   {
-    id: 'p6', icon: '📸', title: 'Wanderlust Travel Series',
-    desc: 'A 6-episode travel documentary series with color-graded aerials, ambient soundscapes, and narrative voiceover.',
-    domain: 'video', tags: ['Premiere Pro', 'Color Grading', 'Aerial', 'Sound Mix'],
-    link: 'https://www.youtube.com/watch?v=ScMzIvxBSi4',
-    thumbnail: 'https://picsum.photos/seed/wanderlust/600/400'
+    id: 'p6', icon: '📸', title: 'Cinematic Intro of Committee Members',
+    desc: 'Introduction Reel for my College Committee of the National level Symposium Event Name Prakarsh.',
+    domain: 'video', tags: ['Premier Pro', 'Sound Design', 'After Effects'],
+    link: 'https://youtu.be/zahTVSvHO8w?si=4Oyvz3YPYs4n0NbB',
+    thumbnail: 'https://framerusercontent.com/images/PnQE1FYh51IniP73fkyHwZyafg.jpg?scale-down-to=2048&width=3840&height=2160'
   }
 ];
 
